@@ -7,6 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 import Hero from '@theme/Hero';
+import Launchpad from '@theme/Launchpad';
 import Languages from '@theme/Languages';
 import Demos from '@theme/Demos';
 import Resources from '@theme/Resources';
