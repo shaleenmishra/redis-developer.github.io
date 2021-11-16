@@ -33,6 +33,34 @@ function Hero() {
               </h2>
 
               <div className="boxes">
+
+
+                <div className="box box-develop">
+                  <SvgDevelopBg color="#FFFFFF" className="bg" />
+                  <span className="icon">
+                  <SvgDevelop color="#FFFFFF" />
+                </span>
+                  <div className="text">
+                    <h3 className="title">Develop</h3>
+                    <p className="description">Enhance, fix or add support for a new region <br/><br/> </p>
+                    <span className="more">Go <SvgArrowRight color="#DC382C" /></span>
+                  </div>
+                  <a href={useBaseUrl('/develop/')} className="link">Read More</a>
+                </div>
+
+                <div className="box box-explore">
+                  <SvgExploreBg color="#FFFFFF" className="bg" />
+                  <span className="icon">
+                  <SvgExplore color="#FFFFFF" />
+                </span>
+                  <div className="text">
+                    <h3 className="title">Consume</h3>
+                    <p className="description">Use tax computation in your application<br/> <br/></p>
+                    <span className="more">Go <SvgArrowRight color="#DC382C" /></span>
+                  </div>
+                  <a href={useBaseUrl('/explore/redisinsight/')} className="link">Read More</a>
+                </div>
+
                 <div className="box box-create">
                   <SvgCreateBg color="#FFFFFF" className="bg" />
                   <span className="icon">
@@ -46,31 +74,7 @@ function Hero() {
                   <a href={useBaseUrl('/create/rediscloud')} className="link">Read More</a>
                 </div>
 
-                <div className="box box-develop">
-                  <SvgDevelopBg color="#FFFFFF" className="bg" />
-                  <span className="icon">
-                  <SvgDevelop color="#FFFFFF" />
-                </span>
-                  <div className="text">
-                    <h3 className="title">Contribute</h3>
-                    <p className="description">Enhance, fix or add support for a new or existing region</p>
-                    <span className="more">Go <SvgArrowRight color="#DC382C" /></span>
-                  </div>
-                  <a href={useBaseUrl('/develop/')} className="link">Read More</a>
-                </div>
 
-                <div className="box box-explore">
-                  <SvgExploreBg color="#FFFFFF" className="bg" />
-                  <span className="icon">
-                  <SvgExplore color="#FFFFFF" />
-                </span>
-                  <div className="text">
-                    <h3 className="title">Adopt</h3>
-                    <p className="description">Use tax computation in your application<br/> <br/></p>
-                    <span className="more">Go <SvgArrowRight color="#DC382C" /></span>
-                  </div>
-                  <a href={useBaseUrl('/explore/redisinsight/')} className="link">Read More</a>
-                </div>
               </div>
             </div>
 
