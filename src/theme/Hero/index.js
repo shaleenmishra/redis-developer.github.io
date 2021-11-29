@@ -78,9 +78,11 @@ function Hero() {
               </div>
             </div>
 
-            <div className="col col--5">
-              <SvgHero color="#FFFFFF" className="illustration" />
-            </div>
+            {/*Put a nice looking tax logog here*/}
+
+            {/*<div className="col col--5">*/}
+            {/*  <SvgHero color="#FFFFFF" className="illustration" />*/}
+            {/*</div>*/}
 
           </div>
         </div>

@@ -25,6 +25,7 @@ function Demos() {
                   Change big redis icon
                   <br/>revist small code/contribute/faq icons
                   <br/>more TODOs
+                  <br/>branching strategy
                 </a></li>
               </ul>
             </div>

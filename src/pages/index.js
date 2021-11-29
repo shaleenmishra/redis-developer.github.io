@@ -17,12 +17,13 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`The Home of Redis Developers`}
-      description="Learn all the best practices to get up and running with Redis in no time. Get started and discover the power of Redis, whether on your local machines or in the cloud.">
+      title={`The Home of Tax Computation`}
+      description="Learn all the best practices to get up and running with Redis in no time.
+      Get started and discover the power of Redis, whether on your local machines or in the cloud.">
       <Hero />
         <main className="home-main">
             <Demos />
-            <Launchpad />
+            {/*<Launchpad />*/}
             {/*<Languages />*/}
             {/*<Resources />*/}
         </main>

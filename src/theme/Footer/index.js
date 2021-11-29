@@ -64,16 +64,16 @@ function Footer() {
         <img src={useBaseUrl('/img/code-2.png')} className="code" alt="" />
 
         <div className="row">
-          <div className="col col--3">
+          {/*<div className="col col--3">*/}
 
-            {logo && logo.src && <div className="footer__logo-ctr">
-                <span className="footer__logo-tagline">Made with &lt;/&gt; by</span>
-                {logo.href ? <a href={logo.href} target="_blank" rel="noopener" className={styles.footerLogoLink}>
-                    <FooterLogo alt={logo.alt} url={logoUrl} />
-                  </a> : <FooterLogo alt={logo.alt} url={logoUrl} />}
-              </div>}
+          {/*  {logo && logo.src && <div className="footer__logo-ctr">*/}
+          {/*      <span className="footer__logo-tagline">Made with &lt;/&gt; by</span>*/}
+          {/*      {logo.href ? <a href={logo.href} target="_blank" rel="noopener" className={styles.footerLogoLink}>*/}
+          {/*          /!*<FooterLogo alt={logo.alt} url={logoUrl} />*!/*/}
+          {/*        </a> : <FooterLogo alt={logo.alt} url={logoUrl} />}*/}
+          {/*    </div>}*/}
 
-          </div>
+          {/*</div>*/}
           <div className="col col--9">
 
               {links && links.length > 0 && <div className="row footer__links">

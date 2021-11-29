@@ -53,26 +53,26 @@ module.exports = {
     navbar: {
       style: 'dark',
       title: null,
-      logo: {
-        alt: 'Redis Developer Hub logo',
-        src: 'img/logo-1.png',
-      },
+      // logo: {
+      //   alt: 'Redis Developer Hub logo',
+      //   src: 'img/logo-1.png',
+      // },
       hideOnScroll: false,
       items: [
+        // {
+        //   to: '/create/rediscloud',
+        //   activeBasePath: 'docs',
+        //   label: 'Get started',
+        //   position: 'right',
+        // },
+        // {
+        //   href: 'https://launchpad.redis.com',
+        //   label: 'Redis Launchpad',
+        //   position: 'right',
+        // },
         {
-          to: '/create/rediscloud',
-          activeBasePath: 'docs',
-          label: 'Get started',
-          position: 'right',
-        },
-        {
-          href: 'https://launchpad.redis.com',
-          label: 'Redis Launchpad',
-          position: 'right',
-        },
-        {
-          href: 'https://redis.com/try-free/',
-          label: 'Try Free',
+          to: '/',
+          label: 'Home',
           position: 'right',
         },
       ],
@@ -143,7 +143,7 @@ module.exports = {
           ],
         },
       ],
-   copyright: `Copyright: © ${new Date().getFullYear()} Redis. All rights reserved. Redis and the cube logo are registered trademarks of Redis Ltd.`, 
+   copyright: `Copyright: © ${new Date().getFullYear()} Intuit. All rights reserved.`,
    },
     colorMode: {
       // Hides the switch in the navbar
