@@ -2,8 +2,8 @@ const path = require('path')
 
 
 module.exports = {
-  title: 'Redis Developer Hub',
-  tagline: 'The Home of Redis Developers',
+  title: 'Tax Computation Home',
+  tagline: 'The Home of Tax Computation',
   url: 'https://developer.redis.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -18,18 +18,6 @@ module.exports = {
         link: 'https://twitter.com/simon_prickett',
         title: 'Manager, Developer Advocacy',
         image: 'profile_pic_simon_prickett.jpg'
-      },
-      suze: {
-        name: 'Suze Shardlow',
-        link: 'https://twitter.com/SuzeShardlow',
-        title: 'Developer Community Manager',
-        image: 'profile_pic_suze_shardlow.jpg'
-      },
-      ajeet: {
-        name: 'Ajeet Raina',
-        link: 'https://twitter.com/ajeetsraina',
-        title: 'Sr. Technical Marketing Manager',
-        image: 'profile_pic_ajeet_raina.jpg'
       },
       julian: {
         name: 'Julian Mateu',
@@ -93,26 +81,6 @@ module.exports = {
               to: '/create/rediscloud',
             },
             {
-              label: 'Develop',
-              to: '/develop/',
-            },
-            {
-              label: 'Explore your data',
-              to: '/explore/redisinsight/',
-            },
-            {
-              label: 'Best Practices',
-              href: 'https://redis.com/redis-best-practices/introduction/',
-            },
-            // {
-            //   label: 'Tutorials',
-            //   to: '#',
-            // },
-            // {
-            //   label: 'Samples & Demos',
-            //   to: '#',
-            // },
-            {
               label: 'Build with Redis Modules',
               href: '/howtos/redisearch/',
             },
@@ -128,18 +96,7 @@ module.exports = {
             {
               label: 'Redis University',
               href: 'https://university.redis.com',
-            },
-            {
-              label: 'Command Reference',
-              href: 'https://redis.io/commands',
-            },
-            {
-              label: 'How-tos & tutorials',
-              to: '/howtos',
-            },
-            //   label: 'Use Cases',
-            //   href: 'https://redis.com/solutions',
-            // },
+            }
           ],
         },
       ],

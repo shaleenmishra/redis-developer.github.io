@@ -61,7 +61,7 @@ function Footer() {
       <div className="container">
 
         <SvgShape className="shape" />
-        <img src={useBaseUrl('/img/code-2.png')} className="code" alt="" />
+        {/*<img src={useBaseUrl('/img/code-2.png')} className="code" alt="" />*/}
 
         <div className="row">
           {/*<div className="col col--3">*/}

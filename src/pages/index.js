@@ -23,8 +23,8 @@ function Home() {
       <Hero />
         <main className="home-main">
             <Demos />
-            {/*<Launchpad />*/}
-            {/*<Languages />*/}
+            <Launchpad />
+            <Languages />
             {/*<Resources />*/}
         </main>
     </Layout>
