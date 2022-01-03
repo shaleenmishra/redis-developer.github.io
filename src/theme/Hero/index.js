@@ -45,7 +45,7 @@ function Hero() {
                     <p className="description">Enhance, fix or add support for a new region <br/><br/> </p>
                     <span className="more">Go <SvgArrowRight color="#DC382C" /></span>
                   </div>
-                  <a href={useBaseUrl('/develop/')} className="link">Read More</a>
+                  <a href={useBaseUrl('/contribute/')} className="link">Read More</a>
                 </div>
 
                 <div className="box box-explore">
@@ -58,7 +58,7 @@ function Hero() {
                     <p className="description">Use tax computation in your application<br/> <br/></p>
                     <span className="more">Go <SvgArrowRight color="#DC382C" /></span>
                   </div>
-                  <a href={useBaseUrl('/explore/redisinsight/')} className="link">Read More</a>
+                  <a href={useBaseUrl('/use/')} className="link">Read More</a>
                 </div>
 
                 <div className="box box-create">
@@ -71,7 +71,7 @@ function Hero() {
                     <p className="description">Browse through frequently asked questions</p>
                     <span className="more">Go <SvgArrowRight color="#DC382C" /></span>
                   </div>
-                  <a href={useBaseUrl('/create/rediscloud')} className="link">Read More</a>
+                  <a href={useBaseUrl('/faq/')} className="link">Read More</a>
                 </div>
 
 
