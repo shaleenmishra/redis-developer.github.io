@@ -2,22 +2,14 @@ module.exports = {
   docs: [
     {
       type: 'link',
-      label: 'Homeee',
+      label: 'Home',
       href: '/',
     },
     {
       type: 'category',
       label: 'Introduction',
       items: [
-        'create/index-create',
-          {
-              type: 'category',
-              label: 'Redis on Azure Cache',
-              items: [
-                  'create/azure/index-azure',
-              ]
-          },
-        'create/gcp/index-gcp',
+        'create/index-create'
       ]
     },
     {
