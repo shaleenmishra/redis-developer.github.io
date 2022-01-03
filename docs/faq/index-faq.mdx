@@ -1,0 +1,89 @@
+---
+id: index-faq
+title: Create Database
+sidebar_label: faq
+slug: /faq
+---
+
+**Q: Explain the terms: recommendation service, TaxRecommendation service, TaxComputation service**
+
+**A:** recommendation is an indirect-tax micro-service registered on devportal. This service exposes multiple RESTful endpoints for tax calculation.
+TaxRecommendation and TaxComputation are two qbo V4 services which rely on recommendation micro-service to provide tax calculations to qbo clients.
+
+**Q: What is the difference between TaxComputation and TaxRecommendation services?**
+
+**A:** TaxRecommendation and TaxComputation services -TODO provider and schema link- are powered by the same core of taxation logic locatec in the recommendation micro service. TODO-link
+
+TaxRecommendation is a deprecated version which was designed and used primarily for US AST. Significant amount of business logic is located in qbo monolith as well.
+TaxRecommendation V4 service relies on /calculate endpoint of recommendation micro-service
+
+TaxComputation is the designed to be single source of truth not only for US but for other regions as well. It also has most of the logic located in the recommendation micro service as opposed to TaxRecommendation service where significant par of business logic resides in QBO monolith in additon to recommendation micro service.
+TaxComputation v4 service relies on /global-calc endpoint of the same.
+
+**Q: If tax calculations are provided by recommendation micro-service eventually, Can I use /global-calc rest endpoint directly from recommendation micros service?**
+
+**A:** For an accurate US AST, recommendation micro-service needs customer exemption information, company address, item classification etc. All of this information is available
+only with qbo so by calling the TaxCompuation v4 api, you rely on qbo to resolve all this information for you.
+For manual rates (US and global), recommendation micro-service expects fully resolved tax rate information (id, rate perrcentage, tax basis etc.).
+This information is also available only with qbo so clients pass only the tax group (aka tax code) information to qbo TaxCompuation api...
+
+**Q: Is TaxComputation service also available via v3?**
+
+
+**Q: What is the current state of adoption TaxComputation service?**
+
+**Q: What regions and features does TaxComputation service supports?**
+
+**Q: What is the release cadence of TaxComputation service?**
+
+**Q: Are there any release notes and where can I find them?**
+
+**Q: What is the current state of TaxComputation? Is it being used by anyone in production already?**
+
+**Q: How do I start consuming TaxComputation for my project? Is there an SDK?**
+
+**Q: The region I am interested in is not supported or partially supported. How do I get that fixed?**
+
+**Q: How can I add/enhance support for my region in TaxComputation service?**
+
+-----------
+
+## Adopt/Consume
+
+#Prerequisites
+
+....existing
+
+
+
+## Contributing
+
+#Prerequisites
+
+#Dry Run (tunnel required) - Use
+
+#Architecture Diagram
+
+#Technical Deep Dive
+
+    QBO
+        v4 schema, interface with recommendation servie
+        Main classes (mapper etc.)
+        Error handling
+
+    recommendation service
+
+        * Interface, core model
+        * Main Classes
+        * Error handling
+
+
+#Add/fix regional features
+
+#PR checklist
+
+#Deployment
+
+<div class="text--center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qTN0GqF_Gq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
